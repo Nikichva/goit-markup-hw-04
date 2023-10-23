@@ -103,6 +103,8 @@ body {
 .navbar {
   border-bottom: 1px solid var(--CORNFLOWER);
   padding: 24px 0;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .link {
@@ -185,6 +187,8 @@ body {
       rgba(46, 47, 66, 0.7)
     ),
     url("../images/people-office.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .first-header {
@@ -247,6 +251,11 @@ body {
 }
 
 .advantages-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  border-radius: 4px;
   background-color: var(--CLOUD);
   padding: 24px 100px;
   margin-bottom: 8px;
@@ -323,10 +332,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: var(--IRIS);
   color: var(--CLOUD);
   cursor: pointer;
+}
+
+.social-icons:hover {
+  background-color: var(--OCEAN);
+}
+
+.social-icons:focus {
+  background-color: var(--OCEAN);
+}
+
+.svg-social-icons {
+  fill: var(--CLOUD);
 }
 
 .light-bg {
@@ -399,6 +420,20 @@ body {
   cursor: pointer;
 }
 
+.customers-icons:hover {
+  border-color: var(--OCEAN);
+  color: var(--OCEAN);
+}
+
+.customers-icons:focus {
+  border-color: var(--OCEAN);
+  color: var(--OCEAN);
+}
+
+.svg-customers-icons {
+  fill: currentColor;
+}
+
 /* ----------------------FOOTER----------------------- */
 .footer {
   margin: 0 auto;
@@ -422,7 +457,7 @@ body {
   font-weight: 500;
   line-height: 150%;
   letter-spacing: 0.32px;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .logo-footer {
@@ -434,8 +469,38 @@ body {
   display: flex;
 }
 
-.footer-box:last-child {
-  margin-left: 120px;
+.footer-box {
+  align-items: baseline;
+  margin-right: 120px;
+}
+
+.card-set-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.social-icons-footer {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--IRIS);
+  color: var(--CLOUD);
+  cursor: pointer;
+}
+
+.social-icons-footer:hover {
+  background-color: #31d0aa;
+}
+
+.social-icons-footer:focus {
+  background-color: #31d0aa;
 }
 /* -----------------------------------PORTFOLIO--------------------- */
 
@@ -486,6 +551,14 @@ body {
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
+.filter-button:active {
+  background-color: var(--OCEAN);
+  color: var(--WHITE);
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
 /* ----------------------------------PROJECTS------------------------- */
 
 .card-portfolio {
@@ -509,25 +582,19 @@ body {
   max-width: 360px;
 }
 
-.card-item:hover {
-  border: 1px solid var(--CLOUD);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+.link-portfolio {
+  display: block;
+  text-decoration: none;
 }
 
-.card-item:focus {
-  border: 1px solid var(--CLOUD);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+.link-portfolio:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
-.card-item:active {
-  border: 1px solid var(--CLOUD);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+.link-portfolio:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .second-header-portfolio {

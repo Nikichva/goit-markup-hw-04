@@ -346,6 +346,10 @@ body {
   background-color: var(--OCEAN);
 }
 
+.social-icons:active {
+  background-color: var(--OCEAN);
+}
+
 .svg-social-icons {
   fill: var(--CLOUD);
 }
@@ -430,6 +434,11 @@ body {
   color: var(--OCEAN);
 }
 
+.customers-icons:active {
+  border-color: var(--OCEAN);
+  color: var(--OCEAN);
+}
+
 .svg-customers-icons {
   fill: currentColor;
 }
@@ -467,10 +476,10 @@ body {
 
 .container-footer {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-box {
-  align-items: baseline;
   margin-right: 120px;
 }
 
@@ -502,6 +511,11 @@ body {
 .social-icons-footer:focus {
   background-color: #31d0aa;
 }
+
+.social-icons-footer:active {
+  background-color: #31d0aa;
+}
+
 /* -----------------------------------PORTFOLIO--------------------- */
 
 .img-block {
